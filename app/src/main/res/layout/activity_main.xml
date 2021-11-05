@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8E7"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/TextView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/alarm" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_time_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="Remind Me"
+        android:textColor="#595959"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#8BA8FF"
+        android:text="Add Alarm"
+        android:textColor="#202957"
+        app:icon="@drawable/add" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_time_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#FB8B8B"
+        android:text="Cancel Alarm"
+        android:textColor="#531E1E"
+        app:icon="@drawable/no" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="By KAN 1918101"
+        android:textColor="#E3E1D7"
+        android:textSize="20sp" />
+
+</RelativeLayout>
